@@ -1,7 +1,7 @@
 class FitFusion < Formula
   desc "Merge, inspect and query cycling FIT activities"
-  homepage "https://github.com/andrew0928/homebrew-tap"
-  url "https://github.com/andrew0928/homebrew-tap/releases/download/fit-fusion-v0.2.2/fit-fusion-v0.2.2-macos-arm64.tar.gz"
+  homepage "https://github.com/andrew0928/homebrew-tools"
+  url "https://github.com/andrew0928/homebrew-tools/releases/download/fit-fusion-v0.2.2/fit-fusion-v0.2.2-macos-arm64.tar.gz"
   version "0.2.2"
   sha256 "f9987dac5906e522d98eb843dd610012035758ce5aff356c8ba1ae70ef85d94a"
 

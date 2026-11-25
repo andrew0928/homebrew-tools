@@ -1,11 +1,13 @@
-# Andrew's Homebrew tap
+# Andrew’s tools
 
-## FIT Fusion for Apple Silicon Macs
+Personal command-line tools and demos for Apple Silicon Macs.
+
+## FIT Fusion
 
 Install the cycling activity tools with Homebrew.
 
 ```sh
-brew install andrew0928/tap/fit-fusion
+brew install andrew0928/tools/fit-fusion
 ```
 
 | Command | Purpose |
@@ -22,4 +24,4 @@ Each command offers `--help`, `--version` and `--skill index`. To update the pac
 brew update && brew upgrade fit-fusion
 ```
 
-Tagged binary archives and SHA-256 checksums are available in [Releases](https://github.com/andrew0928/homebrew-tap/releases).
+Tagged binary archives and SHA-256 checksums are available in [Releases](https://github.com/andrew0928/homebrew-tools/releases).
