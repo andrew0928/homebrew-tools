@@ -2,9 +2,9 @@
 class FitFusion < Formula
   desc "Merge, inspect and query cycling FIT activities"
   homepage "https://github.com/andrew0928/fit-fusion"
-  url "https://github.com/andrew0928/fit-fusion/releases/download/v0.2.2/fit-fusion-v0.2.2-macos-arm64-homebrew.tar.gz"
-  version "0.2.2"
-  sha256 "f9987dac5906e522d98eb843dd610012035758ce5aff356c8ba1ae70ef85d94a"
+  url "https://github.com/andrew0928/fit-fusion/releases/download/v0.2.3/fit-fusion-v0.2.3-macos-arm64.tar.gz"
+  version "0.2.3"
+  sha256 "0ebab57982a5dcf652c6396436937f61ef7972d682804c496338bc860d2d2814"
 
   depends_on arch: :arm64
   depends_on :macos
@@ -13,7 +13,11 @@ class FitFusion < Formula
 
   def install
     bin.install(*TOOLS)
-    pkgshare.install "THIRD-PARTY-NOTICES.txt", "RUST-LIBRARY-COPYRIGHT.html"
+    pkgshare.install "THIRD-PARTY-NOTICES.txt", "RUST-LIBRARY-COPYRIGHT.html", "config.example.yaml"
+  end
+
+  def caveats
+    "To create a fully commented personal config, run: #{opt_bin}/fit-query-files config init"
   end
 
   test do
