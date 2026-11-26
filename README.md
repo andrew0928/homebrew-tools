@@ -2,6 +2,17 @@
 
 Personal command-line tools and demos for Apple Silicon Macs.
 
+## clock-ping
+
+Measure a website’s clock offset using the HTTP Date header. Use `-m` for a live clock with rolling offset statistics.
+
+```sh
+brew install andrew0928/tools/clock-ping
+clock-ping https://example.com -m
+```
+
+Run `clock-ping --skill target` for the offline guide to choosing a URL. The [clock-ping release](https://github.com/andrew0928/WebServerClock/releases/tag/clock-ping-v0.1.0) provides the Apple Silicon executable and SHA-256 checksum.
+
 ## FIT Fusion
 
 Install the current stable release and check the available commands.
