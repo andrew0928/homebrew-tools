@@ -2,9 +2,10 @@
 class FitFusion < Formula
   desc "Merge, inspect and query cycling FIT activities"
   homepage "https://github.com/andrew0928/fit-fusion"
-  url "https://github.com/andrew0928/fit-fusion/releases/download/v0.2.3/fit-fusion-v0.2.3-macos-arm64.tar.gz"
-  version "0.2.3"
-  sha256 "0ebab57982a5dcf652c6396436937f61ef7972d682804c496338bc860d2d2814"
+  license "MIT"
+  url "https://github.com/andrew0928/fit-fusion/releases/download/v0.2.6/fit-fusion-v0.2.6-macos-arm64.tar.gz"
+  version "0.2.6"
+  sha256 "e8ef86b551d654311ae6d9a429b933a66419e19bfdfff7683a800394747393a6"
 
   depends_on arch: :arm64
   depends_on :macos
@@ -13,7 +14,7 @@ class FitFusion < Formula
 
   def install
     bin.install(*TOOLS)
-    pkgshare.install "THIRD-PARTY-NOTICES.txt", "RUST-LIBRARY-COPYRIGHT.html", "config.example.yaml"
+    pkgshare.install "THIRD-PARTY-NOTICES.txt", "RUST-LIBRARY-COPYRIGHT.html", "config.example.yaml", "LICENSE"
   end
 
   def caveats
